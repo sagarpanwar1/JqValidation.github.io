@@ -1,0 +1,116 @@
+*{
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+
+body
+{
+	background-color:#00b300;
+}
+
+header {
+		text-align: center;
+		line-height: 2;
+		
+}
+
+h1{
+	font-size: 2.5em;
+	text-shadow: 1px 2px 0px #66ff99;
+	margin: 0;
+	font-family: arial;
+}
+
+.container
+{
+	background-color:#66ff99;
+	width: 700px;
+	height: 550px;
+	margin-top:1% 0 1% 0; 
+	padding: 3% 0% 0% 7%;
+
+}
+
+
+.input
+{
+	width: 170px;
+	height: 25px;
+	border-radius: 12px;
+	font-size: 0.9em;
+	font-weight: 500;
+	padding: 0.8em;
+	background-color:#EDF7F3 ;
+	border:2px solid #EDF7F3;
+		outline: none;
+}
+
+.Course{
+	width: 170px;
+	height: 25px;
+	border-radius: 12px;
+	font-size: 0.9em;
+	font-weight: 500;
+	border: 2px solid #EDF7F3;
+}
+input: focus{
+	background:#fff;
+	border-color: #7A96A8;
+	transition: border-color .4s, background-color .4s;
+}
+.input1
+{
+	width: 90px;
+	height: 25px;
+	border-radius:8px;
+	background-color: #EDF7F3;
+	box-shadow: 1px 8px 16px black;
+	transition: width 0.2s, height 0.4s;	
+}
+
+.input1:hover{
+	background-color: white;
+	color:red;
+	height:22px;
+	width: 86px;
+
+}
+
+button{
+	background: #7A96A8;
+	margin: 1.25em 0 .5em;
+	cursor:pointer;	
+}
+
+
+
+
+
+
+<!------------------------------------MediaQueries--------------------------------------->
+
+@media (max-width:750px)
+{
+	header{
+		width: 100%;
+	}
+
+	body {
+		height: 100%;
+		width: 100%;
+	}
+
+	.container{
+		width: 50%;
+	}
+}
+
+
+@media screen and (max-width:455px)
+{
+	body{
+		height:; 
+		width:;
+	}
+}

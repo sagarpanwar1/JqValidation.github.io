@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Form Validation </title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="validation.js"></script>
+
+<style>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+</style>
+
+
+</head>	
+
+<body>
+ 
+<div class="fluid-container" id="container">
+
+<header>
+<span>Register for</span>
+		
+	<h1>Student Info Form</h1>
+
+	</header>
+	   
+	<div class="container">
+		<form method="post" action="#">
+	
+	<table>
+
+<fieldset class="col3 col">
+
+<tr><td>Name</td><td><input type="text" name="text" id="name" maxlength="100" class="input" ></td></tr>		
+<tr><td><td><br></td></td></tr>
+
+<tr><td>Course</td><td>
+	
+	<select class="Course" id="Course" onchange="saga()">
+		<option value="select">Select</option>
+		<option value="1">Bachelor's</option>
+		<option value="2">Master's </option>
+		<option value="3">Phd/Research fellow</option>
+
+	</select></td></tr>		
+
+<tr><td><td><br></td></td></tr>
+<tr><td>Email</td><td> <input type="text" name="Email" id="Email" placeholder="abc123@mail.com" maxlength="100" class="input"></td></span></tr>		
+<tr><td><td><br></td></td></tr>
+
+<tr><td>Address</td><td> <input type="text" name="add" id="Address" maxlength="100" class="input"></std></tr>		
+<tr><td><td><br></td></td></tr>
+
+<tr><td>Mob. No</td><td> <input type="number" name="number" id="number" maxlength="10" class="input"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></td></tr>		
+<tr><td><td><br></td></td></tr>
+
+<tr><td>Passwords</td><td> <input type="Password" name="psw" id="Password" maxlength="50" class="input"></td></tr>		
+<tr><td><td><br></td></td></tr>
+
+<tr><td>Confirm Password</td><td><input type="Password" name="conpsw" id="conpsw" maxlength="50" class="input"></td></tr>		
+<tr><td><td><br></td></td></tr>
+
+<tr><td>gender</td><td> <input type="radio" id="container" name="container">male<input type="radio" id="container" name="container">female</tr>	
+<tr><td><td><br></td></td></tr>
+
+
+<tr><td><input type="checkbox"  name="" id="check">Please check if you agree T&C </td></tr>		
+
+<tr><td><td><br></td></td></tr>
+<tr><td></td><td><button onclick="Validation(); validateEmail();"class="input1" value="submit">Register</button> <button class="input1" value="Reset">Reset</button> </td></tr>		
+
+</fieldset>
+</table>
+
+
+</div>
+
+	</form>
+
+</div>
+
+</body>
+</html>    
