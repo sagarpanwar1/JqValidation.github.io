@@ -57,7 +57,6 @@ else if ( $("#Password").val()==""|| !myInput.value.match(lowerCaseLetters) || !
 alert("Password must not be empty and should be aplha numneric with at least one capital letter");
 }
 
-
  else if ($("#conpsw").val()=="")  
   {
  	alert("Please confirm Password");
@@ -70,7 +69,6 @@ alert("Password must not be empty and should be aplha numneric with at least one
  	alert("Password doesn't match");
  }
  
-
   else if (!$("input [name='container']").is(':checked'))
   {    
   	alert("Please select your gender");
